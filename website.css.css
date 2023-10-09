@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-section {
+    position: relative;
+    text-align: center;
+    background-image: url('front page.webp');
+    background-size: cover;
+    height: 600px;
+    text-shadow: 2px 2px #FF9900;
+}
+
+.top{
+    color:#333;
+}
+
+.background-image {
+    position: relative;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content-box {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #FF9900;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.content-box:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.video-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.cir{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    float:left;
+    margin-bottom: 30px;
+}
+
+#db{
+    float: left;
+    margin: 0%;
+    padding-left: 4px;
+    color: whitesmoke;
+    padding-top: 2px;
+}
+
+/* CSS */
+.button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border if desired */
+    border-radius: 5px; /* Add rounded corners if desired */
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: darkorange; /* Change color on hover if desired */
+  }
+
+/* CSS for Image Grid Section */
+.image-grid-container {
+    text-align: center; /* Center the image grid within the container */
+    background-color: #f7f7f7; /* Set background color as needed */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Set a fixed width for each image container */
+.image-container {
+    width: calc(33.33% - 20px); /* 33.33% width for each container with 20px margin */
+    margin: 10px; /* Add margin for spacing */
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: grayscale 0.3s, filter 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overlay p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.image-container:hover img {
+    filter: grayscale(100%);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+  /* Style for the "About Us" section */
+  section#about-us {
+    background-color:#f8b195; /* Replace with your image file */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: #fff; /* Set text color to ensure readability */
+}
+
+/* Style for the ordered list section */
+section#why-choose-us {
+    background-color: 	#c06c84; /* Replace with your image file */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: #fff; /* Set text color to ensure readability */
+}
+
+/* Style for the "Our Mission" part */
+section#our-mission {
+    background-color: #6c5b7b; /* Replace with your image file */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: #fff; /* Set text color to ensure readability */
+}
+
+
+
+.contact-container {
+    position: fixed;
+    right: -400px; /* Start off-screen */
+    top: 0;
+    height: 100%;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+
+
+
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.contact-header h2 {
+    margin: 0;
+}
+
+.contact-content {
+    padding: 20px;
+}
+
+
+.fas fa-phones{
+    background-image: url('icon.png');
+}
+
+
+
+
+/*.contact-icon {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}*/
+
+
+
+
+
+.contact-container {
+    position: fixed;
+    right: -400px; /* Start off-screen */
+    top: 0;
+    height: 100%;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.contact-header h2 {
+    margin: 0;
+}
+
+.contact-content {
+    padding: 20px;
+}
+
+/*.contact-icon {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}*/
+
+
+.whatsapp-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin-bottom: 60px;
+    background-color: #25d366; /* WhatsApp green */
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
